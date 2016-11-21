@@ -1,0 +1,18 @@
+<div class="middle-box text-center loginscreen  animated fadeInDown">
+    <div>
+        <div>
+            <h1 class="logo-name">DI</h1>
+        </div>
+        <form class="m-t" role="form" name="loginForm" ng-submit="login()">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" required="" ng-model="main.email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Contraseña" required="" ng-model="main.password">
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b">Iniciar Sesión</button>
+
+            <a ui-sref="forgot_password"><small>olvidé mi contraseña</small></a>
+        </form>
+    </div>
+</div>

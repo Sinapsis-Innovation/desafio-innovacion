@@ -1,0 +1,43 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+
+                <div class="profile-element" uib-dropdown>
+                    <a uib-dropdown-toggle href>
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">{{main.email}}</strong>
+                             </span>
+                                <span class="text-muted text-xs block">Menú<b class="caret"></b></span>
+                            </span>
+                    </a>
+                    <ul uib-dropdown-menu="" class="animated fadeInRight m-t-xs">
+                        <li><a href="/login">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    DI
+                </div>
+
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="index.dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i> <span class="nav-label">Dashboard</span> </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.grupos"><i class="fa fa-users" aria-hidden="true"></i> <span class="nav-label">Grupos</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.retos"><i class="fa fa-flag" aria-hidden="true"></i> <span class="nav-label">Retos</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.estudiantes"><i class="fa fa-graduation-cap" aria-hidden="true"></i> <span class="nav-label">Estudiantes</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.resultados"><i class="fa fa-bar-chart" aria-hidden="true"></i> <span class="nav-label">Resultados</span></a>
+            </li>
+        </ul>
+
+    </div>
+</nav>

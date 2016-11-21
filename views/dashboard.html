@@ -1,0 +1,98 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-5">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Retos</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="input-group"><input type="text" placeholder="Buscar" class="input-sm form-control" ng-model="queryRetos">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-sm btn-primary">
+                                        Buscar!</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nombre reto
+                                    </th>
+                                    <th>Estados
+                                    </th>
+                                    <th>Empresa
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="reto in retos | filter:queryRetos">
+                                    <td>{{$index+1}}</td>
+                                    <td>
+                                      {{reto.nombre}}
+                                    </td>
+                                    <td>{{reto.estado}}</td>
+                                    <td>{{reto.empresa}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Estudiantes por aprobar</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="input-group"><input type="text" placeholder="Buscar" class="input-sm form-control" ng-model="queryEstudiantes">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-sm btn-primary">
+                                        Buscar!</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nombre
+                                    </th>
+                                    <th>Apellidos
+                                    </th>
+                                    <th>Universidad
+                                    </th>
+                                    <th>Semestre
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="estudiante in estudiantes | filter:queryEstudiantes">
+                                    <td>{{$index+1}}</td>
+                                    <td>
+                                      {{estudiante.nombre}}
+                                    </td>
+                                    <td>{{estudiante.apellidos}}</td>
+                                    <td>{{estudiante.universidad}}</td>
+                                    <td>{{estudiante.semestre}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
