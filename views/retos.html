@@ -1,8 +1,35 @@
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row">
-        <div class="col-lg-12">
-            <div class="text-center m-t-lg">
-              
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Retos</h5>
+                </div>
+                <div class="ibox-content">
+                  <h2>Selecciona un reto</h2>
+                  <select class="form-control m-b" ng-options="reto as reto.nombre for reto in retos track by reto.id" ng-model="retoSeleccionado"></select>
+                  <div ng-if="retoSeleccionado">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <h3>Empresa</h3>
+                        <h4>{{retoSeleccionado.empresa}}</h4>
+                      </div>
+                      <div class="col-md-8">
+                        <h3>Descripción</h3>
+                        <p>{{retoSeleccionado.descripcion}}</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group">
+                          <div class="col-sm-4">
+                              <button class="btn btn-white" type="submit" ng-click="cancel()">Rechazar</button>
+                              <button class="btn btn-primary" type="submit" ng-click="save()">Aceptar</button>
+                          </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
             </div>
         </div>
     </div>
