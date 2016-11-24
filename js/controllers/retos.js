@@ -1,6 +1,6 @@
 angular.module('inspinia').controller('RetosCtrl', function($scope, $state) {
   $scope.retos = [{
-      nombre: 'Software: Desafio innovacion',
+      nombre: 'Software: Desafío innovación',
       estado: 'En Proceso',
       empresa: 'Ruta N',
       id:1,
@@ -30,7 +30,7 @@ angular.module('inspinia').controller('RetosCtrl', function($scope, $state) {
       id:5,
       descripcion:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   }, {
-      nombre: 'Energia: Medición de eficiancia de energía rápida',
+      nombre: 'Energía: Medición de eficiancia de energía rápida',
       estado: 'Finalizado',
       empresa: 'Indisa S.A.',
       id:6,
